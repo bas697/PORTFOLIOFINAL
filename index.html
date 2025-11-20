@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@200..700&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    .frame {
+      width: 1440px;         
+      max-width: 100%;       
+      margin: 0 auto;
+    }
+
+   
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    
+    .panel {
+      position: relative;
+      border: 2px solid black;
+      margin: 5px;        
+      width: 1414px;
+      height: 936px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      padding: 80px 20px;  
+      
+    }
+
+   
+    .nav-wrapper {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      opacity: 90%;
+    }
+
+    .nav.panel {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1414px;
+      width: 100%;       
+      margin: 5px auto;   
+      height: 76px;
+      flex-shrink: 0;
+      padding: 20px;
+      background: orange;
+      border: 2px solid black;
+      box-sizing: border-box;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+  
+   .hero {
+  position: relative;  
+  height: 1050px;
+  display: flex;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;
+  color: white;      
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; 
+  height: 100%;
+  background-image: url('heroimage.png'); 
+  background-size: cover;
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  opacity: 1; 
+  z-index: 0;
+}
+
+ 
+    footer {
+      padding: 40px;
+      text-align: center;
+      background: white;
+      border: 2px solid black;
+      margin: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="frame">
+
+   
+    <div class="nav-wrapper">
+      <nav class="nav panel">
+        <a href="#home">Brendan Stevens</a>
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
+        <a href="#webapp">Web &amp App</a>
+        <a href="#designs">Designs</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+   
+    <header class="hero panel" id="home">
+      <div class="hero-content container">
+        <h1>Welcome</h1>
+        <p>Text and stuff goes here.</p>
+      </div>
+    </header>
+
+  
+    <section id="videos" class="panel">
+      <div class="container">
+        <h2>Videos</h2>
+        <p>videso and astuf</p>
+      </div>
+    </section>
+
+  
+    <section id="about" class="panel">
+      <div class="container">
+        <h2>Welcome To My Portfolio</h2>
+        <p>blalvbjahw  me</p>
+      </div>
+    </section>
+
+   
+    <section id="webapp" class="panel">
+      <div class="container">
+        <h2>Web &amp App</h2>
+        <p>some stuff</p>
+      </div>
+    </section>
+    
+       <section id="designs" class="panel">
+      <div class="container">
+        <h2>Designs</h2>
+        <p>more stuff</p>
+      </div>
+    </section>
+    
+       <section id="resume" class="panel">
+      <div class="container">
+        <h2>Resume</h2>
+        <p>my resume</p>
+      </div>
+    </section>
+    
+       <section id="contact" class="panel">
+      <div class="container">
+        <h2>LETS GET IN TOUCH</h2>
+        <p>How people can reach me</p>
+      </div>
+    </section>
+
+   
+    <footer class="panel">
+      <div class="container">
+        <p>2025 Your Name</p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
